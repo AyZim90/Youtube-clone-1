@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1A1A1A;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#1A1A1A;
+  overflow-x: hidden;
+  padding-top: 60px;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.sidebar-logo {
+  position: relative;
+  width: 100%;
+  top: 5px;
+}
+
+.sidebar-logo img {
+  width: 100%;
+}
+
+.sidebar .close-btn {
+  font-size: 38px;
+  cursor: pointer;
+  margin-right: 20px; 
+}
+/*nav-sevtion*/
+.nav_section {
+  border-bottom: 1px solid grey;
+}
+
+.nav_section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-section li{
+  border-radius: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav_section ul li svg {
+  width: 20%; 
+}
+
+.nav_section ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, margin 0.3s;
+  margin: 10px;
+  border-radius: 5%;
+  overflow: hidden; 
+}
+
+.nav_section ul li:hover {
+  background-color: #474646;
+  margin: 5px; 
+  border-radius: 5%;
+}
+
+
+
+
+/*open-btn*/
+#home {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr; /* Разбиваем на три колонки с автоматической шириной для первого элемента и равномерно распределяем оставшееся пространство между двумя оставшимися элементами */
+  align-items: center;
+ 
+}
+
+.content-btn {
+  width: 10%;
+  text-align: center;
+    margin-left:40px;
+    padding: 16px;
+  }
+  .content-btn img{
+  width: 200px;
+    position: relative;
+    top: 25px;
+    left: 28px;
+  }
+  
+  .open-btn {
+    font-size: 38px;
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+.searchbar{
+  width: 100%;
+  margin-right: 20px;
+  text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* или любой другой подходящий отступ */
+
+}
+.searchbar input {
+  border-radius: 50px;
+  width: 720px;
+  margin-top: 40px;
+  margin-left: 11px;
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #575756;
+  background-position: 100% center;
+  outline: none; 
+  transition: border-color 0.3s;
+}
+
+.searchbar input:focus {
+  border-color: rgb(12, 12, 218); 
+}
+.searchbar ::placeholder{
+  color: grey;
+  font-size: 24px;
+  
+}
+.search-btn {
+  background-color: transparent;
+  border: none;
+}
+.svg-search {
+  margin-top: 40px;
+  margin-left: -69px; 
+}
+.svg-logo{
+  width: 44px;
+}
+
+.action{
+  gap: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon{
+  width: 10%;
+  margin-top: 40px;
+}
+.icon i{
+  font-size: 40px;
+}
+.svg-video{
+  width: 20%;
+  margin-top: 40px;
+}
+.svg-action{
+  width: 20%;
+  margin-top: 40px;
+}
+.action img {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 10px 0 0;
+  height: 40%;
+}
+
+
+
